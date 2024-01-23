@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E185242302FEC2C054F30780 /* Pods_LawLens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B6F2E4080DE1616BCF9D39 /* Pods_LawLens.framework */; };
+		E445A6492B4D9824009D18DD /* PetitionWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445A6482B4D9824009D18DD /* PetitionWebViewController.swift */; };
+		E445A6822B4EA313009D18DD /* ChatGptAPIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445A6812B4EA313009D18DD /* ChatGptAPIMethod.swift */; };
+		E4D320E02B46CBFE0055775D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D320DF2B46CBFE0055775D /* AppDelegate.swift */; };
+		E4D320E22B46CBFE0055775D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D320E12B46CBFE0055775D /* SceneDelegate.swift */; };
+		E4D320E42B46CBFE0055775D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D320E32B46CBFE0055775D /* MainViewController.swift */; };
+		E4D320E92B46CC000055775D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D320E82B46CC000055775D /* Assets.xcassets */; };
+		E4D320EC2B46CC000055775D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D320EA2B46CC000055775D /* LaunchScreen.storyboard */; };
+		E4D320F52B46D0190055775D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E4D320F42B46D0190055775D /* SnapKit */; };
+		E4D320F82B46E0570055775D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D320F72B46E0570055775D /* LoginViewController.swift */; };
+		E4D320FA2B46E13B0055775D /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D320F92B46E13B0055775D /* IntroViewController.swift */; };
+		E4D320FF2B47DAF50055775D /* UserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D320FE2B47DAF50055775D /* UserInfoTableViewController.swift */; };
+		E4D321022B491B6C0055775D /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D321012B491B6C0055775D /* UserInfoTableViewCell.swift */; };
+		E4D321052B4922D70055775D /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D321042B4922D70055775D /* UserInfoModel.swift */; };
+		E4D321082B4932B40055775D /* PetitionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D321072B4932B40055775D /* PetitionTableViewController.swift */; };
+		E4D3210B2B4932CF0055775D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3210A2B4932CF0055775D /* CustomTableViewCell.swift */; };
+		E4D3210D2B4933C90055775D /* PetitionAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3210C2B4933C90055775D /* PetitionAPIModel.swift */; };
+		E4D3210F2B493AF40055775D /* PetitionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3210E2B493AF40055775D /* PetitionDetailViewController.swift */; };
+		E4D321512B4A6B6D0055775D /* ProceedingTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D321502B4A6B6D0055775D /* ProceedingTableTableViewController.swift */; };
+		E4D321532B4A6B870055775D /* ProceedingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D321522B4A6B870055775D /* ProceedingDetailViewController.swift */; };
+		E4D321552B4A6BEA0055775D /* ProceedingAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D321542B4A6BEA0055775D /* ProceedingAPIModel.swift */; };
+		E4D321572B4A6EDC0055775D /* NewsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D321562B4A6EDC0055775D /* NewsWebViewController.swift */; };
+		E4D321592B4A7BEF0055775D /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D321582B4A7BEF0055775D /* MatchingViewController.swift */; };
+		E4D3215B2B4A89BD0055775D /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3215A2B4A89BD0055775D /* AgreementViewController.swift */; };
+		E4D3215E2B4B046C0055775D /* AIReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3215D2B4B046C0055775D /* AIReportViewController.swift */; };
+		E4D321602B4B06CC0055775D /* AgreementWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3215F2B4B06CC0055775D /* AgreementWebViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B59C2430ADA3D90ABD28E0C /* Pods-LawLens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawLens.release.xcconfig"; path = "Target Support Files/Pods-LawLens/Pods-LawLens.release.xcconfig"; sourceTree = "<group>"; };
+		2D27A3E214C01C0AA0CC103A /* Pods-LawLens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawLens.debug.xcconfig"; path = "Target Support Files/Pods-LawLens/Pods-LawLens.debug.xcconfig"; sourceTree = "<group>"; };
+		58B6F2E4080DE1616BCF9D39 /* Pods_LawLens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LawLens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E445A6482B4D9824009D18DD /* PetitionWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionWebViewController.swift; sourceTree = "<group>"; };
+		E445A6802B4E8C3B009D18DD /* LawLens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LawLens.entitlements; sourceTree = "<group>"; };
+		E445A6812B4EA313009D18DD /* ChatGptAPIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGptAPIMethod.swift; sourceTree = "<group>"; };
+		E4D320DC2B46CBFE0055775D /* LawLens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D320DF2B46CBFE0055775D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4D320E12B46CBFE0055775D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E4D320E32B46CBFE0055775D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E4D320E82B46CC000055775D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4D320EB2B46CC000055775D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4D320ED2B46CC000055775D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D320F72B46E0570055775D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E4D320F92B46E13B0055775D /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		E4D320FE2B47DAF50055775D /* UserInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewController.swift; sourceTree = "<group>"; };
+		E4D321012B491B6C0055775D /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		E4D321042B4922D70055775D /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		E4D321072B4932B40055775D /* PetitionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionTableViewController.swift; sourceTree = "<group>"; };
+		E4D3210A2B4932CF0055775D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E4D3210C2B4933C90055775D /* PetitionAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionAPIModel.swift; sourceTree = "<group>"; };
+		E4D3210E2B493AF40055775D /* PetitionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionDetailViewController.swift; sourceTree = "<group>"; };
+		E4D321502B4A6B6D0055775D /* ProceedingTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedingTableTableViewController.swift; sourceTree = "<group>"; };
+		E4D321522B4A6B870055775D /* ProceedingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedingDetailViewController.swift; sourceTree = "<group>"; };
+		E4D321542B4A6BEA0055775D /* ProceedingAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedingAPIModel.swift; sourceTree = "<group>"; };
+		E4D321562B4A6EDC0055775D /* NewsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebViewController.swift; sourceTree = "<group>"; };
+		E4D321582B4A7BEF0055775D /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
+		E4D3215A2B4A89BD0055775D /* AgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		E4D3215D2B4B046C0055775D /* AIReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIReportViewController.swift; sourceTree = "<group>"; };
+		E4D3215F2B4B06CC0055775D /* AgreementWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementWebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4D320D92B46CBFE0055775D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D320F52B46D0190055775D /* SnapKit in Frameworks */,
+				E185242302FEC2C054F30780 /* Pods_LawLens.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7185FE616E7C2BD58E496AA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58B6F2E4080DE1616BCF9D39 /* Pods_LawLens.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B13030C5498799757961AB15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D27A3E214C01C0AA0CC103A /* Pods-LawLens.debug.xcconfig */,
+				1B59C2430ADA3D90ABD28E0C /* Pods-LawLens.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E445A6982B505411009D18DD /* chatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				E445A6812B4EA313009D18DD /* ChatGptAPIMethod.swift */,
+			);
+			path = chatGPT;
+			sourceTree = "<group>";
+		};
+		E4D320D32B46CBFE0055775D = {
+			isa = PBXGroup;
+			children = (
+				E4D320DE2B46CBFE0055775D /* LawLens */,
+				E4D320DD2B46CBFE0055775D /* Products */,
+				B13030C5498799757961AB15 /* Pods */,
+				7185FE616E7C2BD58E496AA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4D320DD2B46CBFE0055775D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4D320DC2B46CBFE0055775D /* LawLens.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D320DE2B46CBFE0055775D /* LawLens */ = {
+			isa = PBXGroup;
+			children = (
+				E445A6802B4E8C3B009D18DD /* LawLens.entitlements */,
+				E445A6982B505411009D18DD /* chatGPT */,
+				E4D3215C2B4B04190055775D /* AgreementVC */,
+				E4D320E32B46CBFE0055775D /* MainViewController.swift */,
+				E4D321582B4A7BEF0055775D /* MatchingViewController.swift */,
+				E4D320FD2B47DAB70055775D /* Delegate */,
+				E4D320FC2B470AA10055775D /* Model */,
+				E4D320FB2B46EA250055775D /* OpenAPITableVC */,
+				E4D320F62B46E0490055775D /* LoginVC */,
+				E4D320E82B46CC000055775D /* Assets.xcassets */,
+				E4D320EA2B46CC000055775D /* LaunchScreen.storyboard */,
+				E4D320ED2B46CC000055775D /* Info.plist */,
+			);
+			path = LawLens;
+			sourceTree = "<group>";
+		};
+		E4D320F62B46E0490055775D /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				E4D320F92B46E13B0055775D /* IntroViewController.swift */,
+				E4D320F72B46E0570055775D /* LoginViewController.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		E4D320FB2B46EA250055775D /* OpenAPITableVC */ = {
+			isa = PBXGroup;
+			children = (
+				E4D3214F2B4A6B390055775D /* Proceeding */,
+				E4D3210A2B4932CF0055775D /* CustomTableViewCell.swift */,
+				E4D321092B4932B90055775D /* Petition */,
+				E4D321062B49328C0055775D /* UserInfo */,
+			);
+			path = OpenAPITableVC;
+			sourceTree = "<group>";
+		};
+		E4D320FC2B470AA10055775D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4D321042B4922D70055775D /* UserInfoModel.swift */,
+				E4D3210C2B4933C90055775D /* PetitionAPIModel.swift */,
+				E4D321542B4A6BEA0055775D /* ProceedingAPIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4D320FD2B47DAB70055775D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E4D320DF2B46CBFE0055775D /* AppDelegate.swift */,
+				E4D320E12B46CBFE0055775D /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		E4D321062B49328C0055775D /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E4D321012B491B6C0055775D /* UserInfoTableViewCell.swift */,
+				E4D320FE2B47DAF50055775D /* UserInfoTableViewController.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		E4D321092B4932B90055775D /* Petition */ = {
+			isa = PBXGroup;
+			children = (
+				E4D321072B4932B40055775D /* PetitionTableViewController.swift */,
+				E4D3210E2B493AF40055775D /* PetitionDetailViewController.swift */,
+				E445A6482B4D9824009D18DD /* PetitionWebViewController.swift */,
+			);
+			path = Petition;
+			sourceTree = "<group>";
+		};
+		E4D3214F2B4A6B390055775D /* Proceeding */ = {
+			isa = PBXGroup;
+			children = (
+				E4D321502B4A6B6D0055775D /* ProceedingTableTableViewController.swift */,
+				E4D321522B4A6B870055775D /* ProceedingDetailViewController.swift */,
+				E4D321562B4A6EDC0055775D /* NewsWebViewController.swift */,
+			);
+			path = Proceeding;
+			sourceTree = "<group>";
+		};
+		E4D3215C2B4B04190055775D /* AgreementVC */ = {
+			isa = PBXGroup;
+			children = (
+				E4D3215A2B4A89BD0055775D /* AgreementViewController.swift */,
+				E4D3215D2B4B046C0055775D /* AIReportViewController.swift */,
+				E4D3215F2B4B06CC0055775D /* AgreementWebViewController.swift */,
+			);
+			path = AgreementVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4D320DB2B46CBFE0055775D /* LawLens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D320F02B46CC000055775D /* Build configuration list for PBXNativeTarget "LawLens" */;
+			buildPhases = (
+				5150BB90FB1281A0467ACC5B /* [CP] Check Pods Manifest.lock */,
+				E4D320D82B46CBFE0055775D /* Sources */,
+				E4D320D92B46CBFE0055775D /* Frameworks */,
+				E4D320DA2B46CBFE0055775D /* Resources */,
+				76F1A89B4CFBDAD2B2415FC7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LawLens;
+			packageProductDependencies = (
+				E4D320F42B46D0190055775D /* SnapKit */,
+			);
+			productName = LawLens;
+			productReference = E4D320DC2B46CBFE0055775D /* LawLens.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4D320D42B46CBFE0055775D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E4D320DB2B46CBFE0055775D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E4D320D72B46CBFE0055775D /* Build configuration list for PBXProject "LawLens" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4D320D32B46CBFE0055775D;
+			packageReferences = (
+				E4D320F32B46D0190055775D /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = E4D320DD2B46CBFE0055775D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4D320DB2B46CBFE0055775D /* LawLens */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4D320DA2B46CBFE0055775D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D320EC2B46CC000055775D /* LaunchScreen.storyboard in Resources */,
+				E4D320E92B46CC000055775D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5150BB90FB1281A0467ACC5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LawLens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76F1A89B4CFBDAD2B2415FC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LawLens/Pods-LawLens-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LawLens/Pods-LawLens-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LawLens/Pods-LawLens-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4D320D82B46CBFE0055775D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D320FA2B46E13B0055775D /* IntroViewController.swift in Sources */,
+				E445A6822B4EA313009D18DD /* ChatGptAPIMethod.swift in Sources */,
+				E4D320FF2B47DAF50055775D /* UserInfoTableViewController.swift in Sources */,
+				E4D321052B4922D70055775D /* UserInfoModel.swift in Sources */,
+				E4D321572B4A6EDC0055775D /* NewsWebViewController.swift in Sources */,
+				E4D321022B491B6C0055775D /* UserInfoTableViewCell.swift in Sources */,
+				E4D321082B4932B40055775D /* PetitionTableViewController.swift in Sources */,
+				E4D3215E2B4B046C0055775D /* AIReportViewController.swift in Sources */,
+				E4D321532B4A6B870055775D /* ProceedingDetailViewController.swift in Sources */,
+				E4D321512B4A6B6D0055775D /* ProceedingTableTableViewController.swift in Sources */,
+				E4D320F82B46E0570055775D /* LoginViewController.swift in Sources */,
+				E4D3210B2B4932CF0055775D /* CustomTableViewCell.swift in Sources */,
+				E445A6492B4D9824009D18DD /* PetitionWebViewController.swift in Sources */,
+				E4D321552B4A6BEA0055775D /* ProceedingAPIModel.swift in Sources */,
+				E4D320E42B46CBFE0055775D /* MainViewController.swift in Sources */,
+				E4D321592B4A7BEF0055775D /* MatchingViewController.swift in Sources */,
+				E4D321602B4B06CC0055775D /* AgreementWebViewController.swift in Sources */,
+				E4D320E02B46CBFE0055775D /* AppDelegate.swift in Sources */,
+				E4D320E22B46CBFE0055775D /* SceneDelegate.swift in Sources */,
+				E4D3215B2B4A89BD0055775D /* AgreementViewController.swift in Sources */,
+				E4D3210D2B4933C90055775D /* PetitionAPIModel.swift in Sources */,
+				E4D3210F2B493AF40055775D /* PetitionDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E4D320EA2B46CC000055775D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D320EB2B46CC000055775D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4D320EE2B46CC000055775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4D320EF2B46CC000055775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4D320F12B46CC000055775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D27A3E214C01C0AA0CC103A /* Pods-LawLens.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LawLens/LawLens.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q653PU93R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LawLens/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WEDLE.LawLens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4D320F22B46CC000055775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B59C2430ADA3D90ABD28E0C /* Pods-LawLens.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LawLens/LawLens.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q653PU93R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LawLens/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WEDLE.LawLens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4D320D72B46CBFE0055775D /* Build configuration list for PBXProject "LawLens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D320EE2B46CC000055775D /* Debug */,
+				E4D320EF2B46CC000055775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D320F02B46CC000055775D /* Build configuration list for PBXNativeTarget "LawLens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D320F12B46CC000055775D /* Debug */,
+				E4D320F22B46CC000055775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4D320F32B46D0190055775D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4D320F42B46D0190055775D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4D320F32B46D0190055775D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E4D320D42B46CBFE0055775D /* Project object */;
+}
